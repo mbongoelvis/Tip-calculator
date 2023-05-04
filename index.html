@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <div class="main">
+    <div class="section1">
+
+        <div class="bills">
+          <p>Bill</p>
+            <div class="bill">
+              <img src="images/icon-dollar.svg">
+              <input type="text" placeholder="0.0" id="amount">
+            </div>
+        </div>
+
+        
+
+        <div class="percentages">
+
+            <span class="tip">Select Tip %</span>
+
+          <div class="first-row">
+            <div class="five"><span id="fivePercent">5%</span></div>
+            <div class="ten"><span id="tenPercent">10%</span></div>
+            <div class="fifteen"><span id="fifteenPercent">15%</span></div>
+          </div>
+          <div class="second-row">
+            <div class="twentyfive"><span id="tewntyFivePercent">25%</span></div>
+            <div class="fifty"><span id="fiftyPercent">50%</span></div>
+            <input type="text" placeholder="Custom" id="custom">
+          </div>
+
+        </div>
+
+        <div class="third-row">
+
+          <div class="third-row-first">
+            <span>Number of People</span>
+            <p id="red">Can't be zero</p>
+          </div>
+
+          <div class="third-row-second">
+            <img src="images/icon-person.svg"/>
+            <input type="text" placeholder="0" id="person">
+          </div>
+
+        </div>
+
+    </div>
+
+    <div class="section2">
+      <div class="amount-sec">
+        <div class="first-row-sec2">
+          <div class="tip-amount">
+            <p class="first">Tip Amount</p>
+            <p class="second">/ Person</p>
+          </div>
+          <span class="money" id="amount">$0.00</span>
+        </div>
+
+        <div class="second-row-sec2">
+          <div class="total">
+            <p class="first">Total</p>
+            <p class="second">/ Person</p>
+          </div>
+          <span class="money" id="total">$0.00</span>
+        </div>
+      </div>
+      <button id="button">RESET</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
